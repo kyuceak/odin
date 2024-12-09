@@ -1,0 +1,60 @@
+.first {
+  background-color: red;
+  border-color: blue;
+  border-style: solid;
+  border-width: 4px;
+  margin: 135px;
+  margin-bottom: 25px;
+  padding: 35px;
+}
+
+.second {
+  border-style: solid;
+  border-color: red;
+  border-width: 3px;
+  margin: 120px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: aquamarine;
+}
+
+.three {
+  border-style: solid;
+  border-color: red;
+  border-width: 3px;
+  background-color: blanchedalmond;
+  margin: 120px;
+  margin-top: 40px;
+  margin-left: 1000px;
+  padding: 50px;
+}
+
+/* cssex1 solution
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.one {
+  background: pink;
+  border: 3px solid blue;
+  
+  padding: 32px;
+  margin: 12px;
+}
+
+.two {
+  background: lightblue;
+  border: 3px solid purple;
+ 
+  margin-bottom: 48px;
+}
+
+.three {
+  background: peachpuff;
+  border: 3px solid brown;
+  width: 200px;
+  
+  padding: 32px;
+  margin-left: auto;
+} */

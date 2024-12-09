@@ -1,0 +1,24 @@
+body {
+  background-color: grey;
+}
+
+.element {
+  background-color: aqua;
+  padding: 15px;
+  font-size: 25px;
+  margin: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: white;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding: 10px;
+}
+
+/* solution:
+https://github.com/TheOdinProject/css-exercises/tree/main/foundations/block-and-inline/02-margin-and-padding-2
+
+*/
