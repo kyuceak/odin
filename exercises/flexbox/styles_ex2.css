@@ -1,0 +1,73 @@
+.header {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between; /* Ensures items are spaced */
+  align-items: center;
+}
+
+.group-start,
+.group-end {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+}
+
+.item {
+  background-color: white;
+  color: blue;
+  padding: 8px;
+  margin: 0px 15px;
+}
+
+.small-container {
+}
+
+h2 {
+  background-color: white;
+  color: rgb(204, 125, 7);
+  padding: 5px 15px;
+  margin: 5px 10px;
+}
+
+/* solution
+.header  {
+  font-family: monospace;
+  background: papayawhip;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+}
+
+ul {
+
+  list-style-type: none;
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+ 
+  text-decoration: none;
+}
+
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+} */
