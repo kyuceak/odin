@@ -1,0 +1,45 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 5px;
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-section {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.circle {
+  width: 40px; /* Set the width of the circle */
+  height: 40px; /* Set the height of the circle (same as width) */
+  background-color: purple; /* Circle's color */
+  border-radius: 50%; /* Makes the element a circle */
+  margin: 5px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}
