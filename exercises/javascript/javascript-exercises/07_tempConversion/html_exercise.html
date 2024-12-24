@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <h1> my TITLE </h1>
+
+
+        <div id="container"></div>
+
+
+
+        <button id="btn"> Click Me </button>
+    <script>
+
+        const container = document.querySelector("#container");
+
+        const content = document.createElement("p");
+
+        content.textContent = "Hey I am red!";
+
+        content.style.cssText = "color: red;";
+
+        container.appendChild(content);
+
+        const h3 = document.createElement("h3");
+
+        h3.textContent = "hey I am a blue h3!";
+
+        h3.style.cssText = "color: blue;";
+
+        container.appendChild(h3);
+
+        const mydiv = document.createElement("div");
+
+
+       
+        
+        mydiv.style.cssText = "border: 2px solid black;"
+        mydiv.style.backgroundColor = "pink";
+        mydiv.style.borderColor = "blue";
+
+        const myh1 = document.createElement("h1");
+
+        myh1.textContent = "I am in a DIV!";
+
+        const my_p = document.createElement("p");
+
+        my_p.textContent = " me TOO!";
+
+        mydiv.appendChild(myh1);
+        mydiv.appendChild(my_p);
+
+        container.appendChild(mydiv);
+
+        const btn = document.querySelector("#btn");
+
+        btn.onclick = () => alert("hello World!");
+
+        
+
+    </script>
+    
+</body>
+</html>
