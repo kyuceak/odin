@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.numbers {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.numbers button {
+  flex: 0 0 calc(33.33% - 5px);
+}
+
+.display {
+  /* background-color: blue; */
+  font-size: xx-large;
+}
+
+.buttons {
+  display: flex;
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
