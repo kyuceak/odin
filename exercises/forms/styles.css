@@ -20,9 +20,30 @@ html body {
 }
 
 .banner {
+  position: relative;
   flex: 0 0 50vw;
   height: 100vh;
   overflow: hidden;
+}
+.overlay {
+  position: absolute; /* Positions over the banner image */
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  /* Semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay img {
+  width: 40%;
+
+  max-width: 40%; /* Optional: Restricts the max width to 30% */
+  /* Optional: Restricts the max height to 30% */
+  height: auto;
 }
 
 .banner img {
