@@ -140,7 +140,7 @@ p{
 .group2 {
     display: grid;
     grid-auto-rows: min-content; /* Rows only take up space needed by content */
-    gap: 25px; /* Adds consistent spacing between rows */
+    gap: 25px; 
     font-size: large;
     font-weight: bold;
     color: white;
@@ -175,13 +175,13 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 0.1fr 0.1fr;
     gap: 25px;
-    width: 100%; /* Ensure the grid takes full width */
+    width: 100%; 
 }
 
 
 .projects-heading {
-    grid-column: 1 / -1; /* Span all columns */
-    margin-bottom: 10px; /* Add some spacing below the title */
+    grid-column: 1 / -1; 
+    margin-bottom: 10px; 
     grid-row: 1 / 2;
 
   }
@@ -245,7 +245,7 @@ input {
     margin-bottom: 5px;
   }
   
-  /* Trends in the third row, right column */
+  
   .trends {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -253,7 +253,7 @@ input {
     flex-direction: column;
     
     align-items: center;
-    /* Give it a look similar to announcements, if desired */
+    
     background-color: white;
     border-radius: 0.3rem;
     padding: 5px;
