@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html body * {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.fa-bell {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 4fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  
+}
+
+.profile {
+  margin-top: 10px;
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns for 3 elements */
+  grid-template-rows: 1fr 1fr; /* Single row */
+  align-items: center; /* Vertically center items */
+
+  justify-content: start;
+  row-gap: 20px;
+
+  /* Spacing between elements */
+}
+
+
+/* Projects heading - independent of grid */
+
+.profile button {
+  
+  justify-self: start;
+  padding: 10px 30px;
+  margin-right: 25px;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  background-color: #2b89e4;
+  color: white;
+}
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 20% 50%;
+  cursor: pointer;
+
+}
+
+h3 {
+  cursor: pointer;
+}
+.header {
+  display: grid;
+
+  grid-column: 2 / 3;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.search-bar {
+    grid-column: 1 / 3; 
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    gap: 10px; 
+    grid-template-rows: 1fr 1fr;
+  }
+.search-bar input {
+  flex-grow: 1;
+  height: 40%;
+  max-height: 35px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+
+
+
+p{
+    margin: 0;
+}
+
+.welcome{
+    grid-row: 2/ 3;
+    grid-column: 1/3;
+    display: flex;
+    gap: 25px;
+    margin-left: 15px;
+}
+
+
+.glass-icon {
+
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.sidebar {
+  grid-row: 1 / 5;
+  background-color: steelblue;
+  display: grid;
+  grid-template-rows: 0.2fr 0.3fr 1fr;
+  gap: 25px;
+}
+
+
+.db-logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    align-items: center;
+
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.group1{
+    display: grid;
+    gap: 25px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+
+}
+
+.group2 {
+    display: grid;
+    grid-auto-rows: min-content; /* Rows only take up space needed by content */
+    gap: 25px; /* Adds consistent spacing between rows */
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: #d7d1d0;
+}
+
+.main{
+    grid-row: 2 / 5;
+    background-color: #d6d6d2;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 25px;
+    grid-template-rows: 0.1fr 0.4fr auto;
+    overflow-y:auto; /* çok önemli maini otomatik olarak strech etmeye yarıyor*/
+}
+
+
+
+.projects{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 25px;
+    width: 100%; /* Ensure the grid takes full width */
+}
+
+
+.projects-heading {
+    grid-column: 1 / -1; /* Span all columns */
+    margin-bottom: 10px; /* Add some spacing below the title */
+    grid-row: 1 / 2;
+
+  }
+
+.site-anno{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 17px;
+}
+
+.card{
+
+    
+    height: 300px;
+    border-radius: 8px;
+    background-color: white;
+    border-left: 8px solid #ffc107;
+    padding: 10px 20px;
+    
+}
+
+.card-text{
+    color: grey;
+    font-size: medium;
+}
+
+.anno-card{
+    border-bottom: 2px solid grey;
+}
+
+
+.anno-text {
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+  
+   
+    overflow: hidden;
+  
+    
+    text-overflow: ellipsis; 
+    
+  }
+
+  .announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: white;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 25px;
+    align-self: start;
+    
+    padding-bottom: 25px;
+  }
+
+  h4{
+    margin-bottom: 5px;
+  }
+  
+  /* Trends in the third row, right column */
+  .trends {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    /* Give it a look similar to announcements, if desired */
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 5px;
+    align-self:start;
+  }
+
+  .col3{
+    display: grid;
+    gap:15px;
+  }
+
+  .trends ul{
+    padding: 0;
+  }
+  
+  .user{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .user img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 20% 50%;
+    cursor: pointer;
+  }
