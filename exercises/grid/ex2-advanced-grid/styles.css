@@ -1,0 +1,62 @@
+.grid-container {
+  resize: both; /* allows user to resize the grid*/
+  overflow: auto; /* to enable scrolling */
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  /* grid-template-rows: 150px 150px; */
+  /* grid-template-columns: 150px 150px 150px 150px 150px; */
+
+  /* fr ornekleri: hepsini otomatik olarak fraction seklinde paylastiryor */
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-columns: repeat(2, 2fr) repeat(3, 1fr); */
+
+  /* min max kullanımı (sınırlamak için boyutları):
+  
+  width ve heighti min max koymak icin
+
+  .grid-container {
+  grid-template-rows: repeat(2, min(200px, 50%));
+  grid-template-columns: repeat(5, max(120px, 15%));
+}
+
+  */
+
+  /* direkt olarak min max koyabilirsin bu fonksiyonla
+  
+  
+  .grid-container {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, minmax(150px, 200px));
+}
+  
+    .non-grid-example {
+    width: clamp(500px, 80%, 1000px);
+}
+
+
+  */
+
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
+}
+
+.grid-item {
+  background-color: #444;
+  text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+p {
+  margin: 12px auto 24px;
+}
+
+img {
+  height: 60px;
+}
