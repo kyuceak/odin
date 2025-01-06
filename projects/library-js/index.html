@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read?</th>
+            
+            </tr>
+        </thead>
+        <tbody class="body">
+
+        </tbody>
+    </table>
+    
+    <button id="button" type="button">Create New Book</button>
+
+    <dialog id="modal">
+      <form action="" id="bookForm">
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author">
+
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" name="pages">
+
+        <label for="isread"> Did you read?</label>
+        <select name="isread" id="isread" >
+            <option value="not read yet">not read yet</option>
+            <option value="already read">did read</option>
+        </select>
+
+        <button id="createbtn">Add book</button>
+
+     
+
+      </form>
+      </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
