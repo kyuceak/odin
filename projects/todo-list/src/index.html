@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="todo_app_logo.png" alt="" />
+        <h1>Your Todo List</h1>
+      </div>
+      <div class="form">
+        <div class="form-headers">
+          <button type="button" id="project-btn">Project</button>
+          <button type="button" id="todo-btn">Todo</button>
+          <button type="button" id="list-btn">List</button>
+        </div>
+
+        <div class="view hidden" id="project-view">
+          <form action="" class="project-form">
+            <label for="">Project Name:</label>
+            <input type="text" name="projectName" />
+
+            <button>Add Project</button>
+          </form>
+        </div>
+
+        <form action="" class="todo-form view" id="todo-view">
+          <div class="col1">
+            <div class="title">
+              <label for="">Title:</label>
+              <input type="text" name="title" />
+            </div>
+
+            <div class="desc">
+              <label for="">Description:</label>
+              <textarea name="desc" id=""></textarea>
+            </div>
+
+            <div class="date">
+              <label for="date">Due date:</label>
+              <input type="date" name="dueDate" id="date" />
+            </div>
+          </div>
+
+          <div class="col2">
+            <div class="project-select">
+              <label for="">Select Project:</label>
+              <select name="selectedProject" id="selectedProject"></select>
+            </div>
+
+            <div class="prio">
+              <label for="">Priorty:</label>
+              <select name="priority" id="">
+                <option value="High">High</option>
+                <option value="Normal">Normal</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+
+            <div class="notes">
+              <label for="notes">Notes:</label>
+              <textarea name="notes" id=""></textarea>
+            </div>
+
+            <button id="add-todo-btn">Add Todo</button>
+          </div>
+        </form>
+
+
+
+        <div class="view hidden" id="list-view">
+           <h2>Project List</h2>
+           <div id="project-list"></div>
+          </div>
+      </div>
+
+   
+    </div>
+  </body>
+</html>

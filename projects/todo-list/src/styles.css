@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+html body{
+    margin: 0;
+    font-family: "exo-2",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img{
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px;
+   
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html{
+    background-color:  #0F4C81;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+form{
+    display: flex;
+    
+    gap: 3rem;
+    
+}
+
+.form{
+    background-color: #1394eb;
+    padding: 2rem 7rem;
+    border-radius: 2rem;
+
+}
+
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title, .desc, .date,
+.prio, .notes, .project-select{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+input{
+    border-radius: 0.5rem;
+    height: 1.3rem;
+    border-style: none;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.3rem;
+}
+
+input:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(208, 200, 200, 0.5); /* Add custom glow effect */
+    border: 3px solid #0b43dd; /* Custom focus border */
+}
+textarea{
+    border-radius: 0.5rem;
+    border-style: none;
+    resize: none;
+    min-height: 5rem;
+}
+
+textarea:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(208, 200, 200, 0.5); /* Add custom glow effect */
+    border: 3px solid #0b43dd; /* Custom focus border */
+}
+
+select{
+    outline: none;
+    height: 1.9rem;
+    font-size: 1.2rem;
+    padding: 0.1rem 0.1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.form-headers{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+.form-headers button {
+    border-radius: 1.5rem;
+    border-style: none;
+    font-size: 2rem;
+    padding: 0.1rem 3rem;
+    cursor: pointer;
+    background-color: #f8f8fa;
+}
+
+.form-headers button:hover {
+    background-color: #220087; /* Highlight color (adjusted as per your Tailwind CSS preference) */
+    color: white;
+}
+
+/* Selected (active) button style */
+.form-headers button.selected {
+    background-color: #220087; /* Highlight color */
+    color: white; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for emphasis */
+}
+
+
+.project-form button,
+.todo-form button
+ {
+    
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+    border: 3px solid rgb(5, 58, 157);
+
+}
+
+.project-form button:hover,
+.todo-form button:hover
+ {
+    
+    background-color: #220087;
+    color:white;
+
+}
+
+.notes{
+    margin-bottom: 0.2rem;
+}
+
+.hidden{
+    display: none;
+}
+
+/* LIST PART*/
+
+#project-list {
+    margin: 20px 0;
+  }
+  
+  .project-dropdown {
+    display: block;
+    width: 100%;
+    background-color: #0067d5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: large;
+  }
+  
+  .project-dropdown:hover {
+    background-color: #0056b3;
+  }
+  
+  .todos {
+    padding: 1rem 2rem;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background-color:rgb(6, 52, 138);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 50vw;
+  }
+  
+  .todos.hidden {
+    display: none;
+  }
+  
+  .todo-item {
+    background-color: #0056b3;
+    color: white;
+    margin: 5px 0;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    
+   
+    
+  }
+
+
+  .todotop{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* Ensure paragraphs stay within bounds */
+
+  }
+  
+  .todobot{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Ensure paragraphs stay within bounds */
+    gap: 2rem;
+  }
+
