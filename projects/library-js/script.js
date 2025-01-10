@@ -127,12 +127,20 @@ addBookBtn.addEventListener("click", () => {
 
 createBookBtn.addEventListener("click", (e) => {
 
-    e.preventDefault();
 
     const title = document.getElementsByName("title")[0];
     const author = document.getElementsByName("author")[0];
     const pages = document.getElementsByName("pages")[0];
     const isread = document.getElementsByName("isread")[0];
+
+    if(!title.checkValidity()){
+        console.log("this field is required")
+        return;
+    }
+    if(!pages.checkValidity()){
+        console.log("wrong page number");
+        return
+    }
 
     console.log(document.getElementsByName("isread")[0]);
     addBookToLibrary(title.value, author.value, pages.value, isread.value);

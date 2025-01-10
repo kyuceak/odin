@@ -1,0 +1,36 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+    color: white;
+  background-color: rgb(137, 149, 149);
+  padding: 1rem 2rem;
+}
+
+
+#loading-bar {
+
+
+  height: 5px;
+  background-color: #4caf50;
+
+}
+
+.visible {
+  display: none;
+}

@@ -1,0 +1,32 @@
+
+html,body {
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input{
+    outline: none;
+    border: 3px solid gray;
+}
+
+#myform input:valid{
+
+    border: 3px solid green;
+}
+
+
+#myform input:invalid{
+    
+    border: 3px solid red;
+
+}
