@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Exo 2", serif;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#game {
+  display: flex;
+  gap: 35px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 2px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cell.hit {
+  background-color: red;
+}
+
+.cell.miss {
+  background-color: gray;
+}
+
+.cell.playerShip {
+  background-color: green;
+}
+
+.player-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+}
+
+#start-btn {
+  color: white;
+  background-color: green;
+  font-size: larger;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+#randomise-btn {
+  background-color: rgba(30, 30, 214, 0.631);
+  border-radius: 1rem;
+  font-size: large;
+  padding: 0.2rem 1.2rem;
+  color: white;
+}
+
+#randomise-btn:hover{
+    
+    cursor: pointer;
+    background-color: rgba(78, 92, 248, 0.631);
+}
+
+#start-btn:hover {
+  color: white;
+  background-color: rgb(13, 192, 13);
+  cursor: pointer;
+}
