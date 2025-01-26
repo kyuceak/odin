@@ -1,0 +1,229 @@
+body * {
+    font-family: "IBM Plex Mono", serif;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container
+{
+    min-height: 100vh;
+    
+    
+}
+
+header {
+
+    height: 80vh;
+    max-height: 100vh;
+    position: relative;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.40));
+    
+    display: flex;
+    align-items: center;
+    padding: 4rem 10rem;
+    justify-content: center;
+    
+  }
+
+
+
+
+
+.header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #060696; 
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
+  z-index: -1; 
+}
+
+
+.header img{
+    min-width: 400px;
+    min-height: 300px;
+    max-width: auto;
+    max-height: 650px;
+    border-radius: 0.5rem;
+    
+}
+
+
+.about{
+    background: white;
+    height: auto;
+    max-height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    min-width: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+.about-text h2{
+    margin: 0px;
+}
+
+.about-icons{
+  
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    padding: 5px 5px;
+}
+
+.about-icons svg{
+    width: 35px;
+    height: 30px;
+    
+}
+
+
+.my-work
+{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem 2rem;
+}
+
+
+
+.project-card p{
+    margin: 0;
+    padding: 1rem;
+}
+
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-icons {
+   display: flex;
+
+    gap: 0.5rem;
+    margin-right: 3rem;
+    cursor: pointer;
+
+}
+
+
+ 
+
+.card-header h3{
+    margin: 0;
+    padding: 1rem;
+}
+
+.project-card p {
+    margin-bottom: 2rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+   
+    
+}
+.project-card
+{
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      
+      min-height: auto; /* overrides 100vh */
+      /* You could reduce the padding if you want to maximize usable space */
+      padding: 0;
+      background-color: white;
+      filter: none; /* disable drop-shadow on small screens */
+
+    }
+
+   
+
+    .header img {
+      /* Let the image scale to the full width available */
+      width: 100%;
+      max-width: 100%;
+      /* Remove any set height constraints so it can scale properly */
+      height: auto;
+      min-height: auto;
+      min-width: 350px;
+      max-height: none;
+       
+     border-radius: 0;
+    }
+    
+    .about-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about {
+      /* Also make the about section full width */
+      width: 100%;
+      max-width: 100%;
+      min-width: 350px;
+      min-height: auto;
+      max-height: 100%;
+      height: 100%;
+     
+      margin-top: 0; /* Remove or adjust the margin to fit your design */
+      box-sizing: border-box;
+      border-radius: 0;
+    }
+    .container{
+        min-height: 100vh;
+        height: auto;
+      
+    }
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-work {
+        grid-template-columns: 1fr;
+    }
+  }
+
+  .container-2{
+    background-color: #6B5B95;
+    min-height: 100vh;
+
+  }
+
+  .container-2 h1{
+    color: rgb(238, 238, 238);
+    padding: 2rem 2rem;
+    margin: 0;
+   
+  }
+
