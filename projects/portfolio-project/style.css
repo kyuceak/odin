@@ -1,36 +1,26 @@
 body * {
-    font-family: "IBM Plex Mono", serif;
+  font-family: "IBM Plex Mono", serif;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-
-.container
-{
-    min-height: 100vh;
-    
-    
+.container {
+  min-height: 100vh;
 }
 
 header {
+  height: 80vh;
+  max-height: 100vh;
+  position: relative;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
 
-    height: 80vh;
-    max-height: 100vh;
-    position: relative;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.40));
-    
-    display: flex;
-    align-items: center;
-    padding: 4rem 10rem;
-    justify-content: center;
-    
-  }
-
-
-
-
+  display: flex;
+  align-items: center;
+  padding: 4rem 10rem;
+  justify-content: center;
+}
 
 .header .background {
   position: absolute;
@@ -38,257 +28,219 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #080853f0; 
+  background-color: #000000f0;
   clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
-  z-index: -1; 
+  z-index: -1;
 }
 
-
-.header img{
-    min-width: 400px;
-    min-height: 300px;
-    max-width: auto;
-    max-height: 650px;
-    border-radius: 1rem;
-    
+.header img {
+  min-width: 400px;
+  min-height: 300px;
+  max-width: auto;
+  max-height: 650px;
+  border-radius: 1rem;
 }
 
-
-.about{
-    background: white;
-    height: auto;
-    max-height: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 5px 10px;
-    min-width: 450px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 0rem 0.5rem 0.5rem 0rem;
+.about {
+  background: white;
+  height: auto;
+  max-height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  min-width: 450px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
 }
 
-.about-text h2{
-    margin: 0px;
+.about-text h2 {
+  margin: 0px;
 }
 
-.about-icons{
-  
-    cursor: pointer;
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-    padding: 5px 5px;
+.about-icons {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  padding: 5px 5px;
 }
 
-.about-icons svg{
-    width: 35px;
-    height: 30px;
-    
+.about-icons svg {
+  width: 35px;
+  height: 30px;
 }
 
-
-.my-work
-{
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: repeat(3,1fr);
-    padding: 1rem 2rem;
-}
-
-
-
-.project-card p{
-    margin: 0;
-    padding: 1rem;
-   
-}
-
-
-.card-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-}
-.card-icons {
-   display: flex;
-
-    gap: 0.5rem;
-   
-    cursor: pointer;
-
-}
-
-
- 
-
-.card-header h3{
-    margin: 0;
-
+.my-work {
+  display: grid;
+  gap: 8rem;
+  /* This creates columns that are at least 250px, but take up remaining space if available */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 3rem 5rem;
 }
 
 .project-card p {
-    margin-bottom: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-icons {
+  display: flex;
+
+  gap: 0.5rem;
+
+  cursor: pointer;
+}
+
+.card-header h3 {
+  margin: 0;
+}
+
+.project-card p {
+  margin-bottom: 2rem;
 }
 
 .project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.8rem 0.8rem 0 0;
-   
-    
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
-.project-card
-{
-    background-color: white;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    transition: transform 0.2s ease, box-shadow 0.2 ease;
-    cursor: pointer;
-    animation: fadeUp 0.8s ease forwards; 
-    opacity: 0;
-    transform: translateY(-20px);
+.project-card {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2 ease;
+  cursor: pointer;
+  
+
 }
 
-
-.project-card:hover{
-    transform: translateY(-6px);
+.project-card:hover {
+  transform: translateY(-6px);
   box-shadow: 0 8px 36px rgba(0, 0, 0, 0.6);
 }
 
-
-
 /* MOBILE */
 @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      
-      min-height: auto; /* overrides 100vh */
-      /* You could reduce the padding if you want to maximize usable space */
-      padding: 0;
-      background-color: white;
-      filter: none; /* disable drop-shadow on small screens */
+  header {
+    flex-direction: column;
 
-    }
-
-    
-   
-
-    .header img {
-      /* Let the image scale to the full width available */
-      width: 100%;
-      max-width: 100%;
-      /* Remove any set height constraints so it can scale properly */
-      height: auto;
-      min-height: auto;
-      min-width: 350px;
-      max-height: none;
-       
-     border-radius: 0;
-    }
-    
-    .about-text{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .about {
-      /* Also make the about section full width */
-      width: 100%;
-      max-width: 100%;
-      min-width: 350px;
-      min-height: auto;
-      max-height: 100%;
-      height: 100%;
-     
-      margin-top: 0; /* Remove or adjust the margin to fit your design */
-      box-sizing: border-box;
-      border-radius: 0;
-    }
-    .container{
-        min-height: 100vh;
-        height: auto;
-      
-    }
-    .container-2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .my-work {
-        grid-template-columns: 1fr;
-    }
-
-
-    .container-3 h1{
-      
-        font-size: 2rem !important;
-       
-      }
-    
+    min-height: auto; /* overrides 100vh */
+    /* You could reduce the padding if you want to maximize usable space */
+    padding: 0;
+    background-color: white;
+    filter: none; /* disable drop-shadow on small screens */
   }
 
-  .container-2{
-    
-    background-image: url('./static/038495062696.jpg');
-   background-position: top left;
-  
-   background-size: cover;
+  .header img {
+    /* Let the image scale to the full width available */
+    width: 100%;
+    max-width: 100%;
+    /* Remove any set height constraints so it can scale properly */
+    height: auto;
+    min-height: auto;
+    min-width: 350px;
+    max-height: none;
+
+    border-radius: 0;
+  }
+
+  .about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about {
+    /* Also make the about section full width */
+    width: 100%;
+    max-width: 100%;
+    min-width: 350px;
+    min-height: auto;
+    max-height: 100%;
+    height: 100%;
+
+    margin-top: 0; /* Remove or adjust the margin to fit your design */
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+  .container {
     min-height: 100vh;
-    text-align: center;
-    
+    height: auto;
   }
- 
-
-  .container-2 h1{
-    color: rgb(6, 3, 3);
-    padding: 2rem 2rem;
-    margin: 0;
-    animation: fadeUp 0.8s ease forwards; 
-    opacity: 0;
-    transform: translateY(-20px);
-    
-   
-  }
-
-  @keyframes fadeUp {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .container-3 h1{
-    margin: 0;
-    font-size: 4rem;
-    color: white;
-  }
-  
-  .container-3{
-    min-height: 100vh;
-    background-color: #3a66d7; 
-
-    /* A radial gradient that draws a small white dot, 
-       then repeats every 20px in both directions */
-    background-image: radial-gradient(#fff 1px, transparent 1px);
-    background-size: 20px 20px; 
+  .container-2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+
+  .my-work {
+    grid-template-columns: 1fr;
+  }
+
+  .container-3 h1 {
+    font-size: 2rem !important;
+  }
 }
 
+.container-2 {
+  background-image: url("./static/038495062696.jpg");
+  background-position: top left;
+
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container-2 h1 {
+  color: rgb(6, 3, 3);
+  padding: 2rem 2rem;
+  margin: 0;
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-3 h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: white;
+}
+
+.container-3 {
+  min-height: 100vh;
+  background-color: #000000;
+
+  /* A radial gradient that draws a small white dot, 
+       then repeats every 20px in both directions */
+  background-image: radial-gradient(#837d7d 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
