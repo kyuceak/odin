@@ -1,9 +1,15 @@
 const http = require("http");
 const fs = require("fs");
+const _ = require('lodash');
 
 // the callback function runs everytime a request arrives
 const server = http.createServer((req, res) => {
-  console.log(req.url, req.method);
+  
+
+  // lodash
+  
+  const num = _.random(0,20);
+  console.log(num);
 
   res.setHeader("Content-Type", "text/html");
 
@@ -19,7 +25,7 @@ const server = http.createServer((req, res) => {
         path+= 'about.html';
         res.statusCode = 200;
         break;
-    case '/about-me':
+    case '/about_me':
         res.statusCode = 301;
         res.setHeader('Location', '/about');
         res.end();

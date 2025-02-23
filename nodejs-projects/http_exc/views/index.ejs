@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog kutay | <%= title %></title>
+  </head>
+  <body>
+   
+    <%- include('./partials/nav.js') %>
+
+    <div class="content">
+      <h2>All blogs</h2>
+
+      <% if (blogs.length > 0) { %> <% blogs.forEach(blog => { %>
+
+      <h3 class="title"><%= blog.title %></h3>
+      <p class="snippet"><%= blog.snippet%></p>
+      <%}) %> <% } else { %>
+
+      <h3>no blog to display</h3>
+      <% }%>
+    </div>
+  </body>
+</html>
