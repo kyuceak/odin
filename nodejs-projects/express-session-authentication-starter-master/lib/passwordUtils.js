@@ -11,10 +11,12 @@ function genPassword(password) {
         salt,
         hash: genHash
     }
-}
+};
 
 function validPassword(password, hash, salt) {
 
+    let hashVerify = crypto.pbkdf2Sync(password,salt, 10000, 64, "sha512").toString("hex");
+    return hash == hashVerify;
 }
 
 

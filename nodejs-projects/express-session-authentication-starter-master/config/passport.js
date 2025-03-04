@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const db = require("./database");
-const { validPassword } = require("../lib/passwordUtils");
+const validPassword  = require("../lib/passwordUtils").validPassword;
 
 const customFields = {
   usernameField: "uname",
@@ -44,13 +44,14 @@ passport.serializeUser((user,done) => {
 
 
 passport.deserializeUser( async (userId, done) => {
+    
 
     try{
-        const result = db.query("SELECT * FROM users WHERE users.id = $1", [
+        const result = await db.query("SELECT * FROM users WHERE users.id = $1", [
             userId,
           ]);
 
-          if(result.rows.length === 0)
+          if(result.rows[0].length === 0)
           {
             return done(null,false, { message: "username with this id couldnt be found."})
           }
