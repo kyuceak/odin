@@ -80,7 +80,7 @@ app.get("/log-out", (req, res, next) => {
       res.redirect("/");
     });
   });
-  
+   
 
 app.get("/", (req, res) => res.render("index", { user: req.user }));
 
